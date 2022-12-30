@@ -251,6 +251,7 @@ select {
 .beneficios {
   padding: 3em 0;
 }
+
 .conteudo-beneficios {
   width: 640px;
   margin: 0 auto;
@@ -262,6 +263,29 @@ select {
   display: inline-block;
   vertical-align: top;
 }
+
+.itens {
+  line-height: 1.5; /*Altura da linha*/
+}
+
+/*class pseudo elemento*/
+.itens:first-child { /*De todos os irmãos da lista, ele pegará o primeiro.*/
+  font-weight: bold; /*Peso da fonte: negrito */
+}
+
+/*
+
+.itens:last-child { /*De todos os irmãos da lista, ele pegará o último;
+  font-weight: bold;
+}
+.itens:nth-child(4) { /*De todos os irmãos da lista, ele pegará o quarto elemento.
+  font-weight: bold; 
+}
+.itens:nth-child(2n) { /*De todos os irmãos da lista, ele pegará os pares.
+  font-weight: bold; 
+}
+
+*/
 
 .imagem-beneficios {
   width: 60%;
