@@ -29,7 +29,7 @@ nav a {
   text-decoration: none; /*Tira sublinhado*/
   color: #000000;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 /* dois pontos significa comportamento, ou seja, o link a em navegação tem o comportamento hover (quando a pessoa usuária posiciona o mouse sobre ele)*/
@@ -105,7 +105,6 @@ footer {
   text-align: center;
   background: url('../img/bg.jpg');
   padding: 40px 0;
-  margin-top: 50px;
 }
 
 .logo-branco {
@@ -127,7 +126,6 @@ main {
 
 form {
   margin: 40px 0;
-  
 }
 
 form label,
@@ -295,11 +293,44 @@ select {
 
 .imagem-beneficios {
   width: 60%;
-  display: inline-block;
+  opacity: 1; /* 0 a 1  , 0.7 = 70% */
+  transition: 400ms;
+  box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.3;
 }
 
 .video {
   text-align: center;
   width: 560px;
   margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    /* imagem */
+    text-align: center;
+  }
+
+  nav {
+    /* Menu de navegação */
+    position: static;
+  }
+
+  .lista-beneficios,
+  .imagem-beneficios {
+    width: 100%;
+  }
+
+  
 }
