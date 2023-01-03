@@ -40,8 +40,6 @@ nav a:hover {
 
 .servicos li:hover {
   border-color: orange;
-  transform: scale(1.1);
-  transition: 1s all;
 }
 
 .servicos li:active {
@@ -60,8 +58,7 @@ nav a:hover {
 .barba,
 .barbaecabelo {
   border-radius: 15px;
-  width: 238px;
-  height: 357px;
+  width: 100%;
 }
 
 .servicos {
@@ -119,9 +116,6 @@ footer {
   font-size: 13px;
   margin: 10px;
   text-align: center;
-}
-
-main {
 }
 
 form {
@@ -327,10 +321,62 @@ select {
     position: static;
   }
 
+  main {
+    width: auto;
+  }
+
+  .servicos li {
+    margin: 2%;
+  }
+
   .lista-beneficios,
   .imagem-beneficios {
+    width: 90%;
+    margin: 15px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 250px; /* Unidade fracionária, distribue os espaços que sobram entre ambos os elementos, 1fr 1fr é como se fosse 50% 50% */
+    gap: 20px;
+    place-content: center;
+  }
+
+  img {
     width: 100%;
   }
 
+  ul {
+    text-align: center;
+  }
+
+  .servicos {
+    width: 100%; 
+  }
+
+  form {
+    margin: 40px 40px;
+  }
+
+  .input-padrao {
+    width: 85%;
+  }
+
+  .enviar {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
   
+  table {
+    text-align: center;
+    width: 95%;
+    margin: 10px;
+  }
+
+  .logo-branco {
+    width: 50%;
+  }
 }
