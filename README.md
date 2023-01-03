@@ -1,8 +1,7 @@
-# :construction: Barbearia Site :construction:
-Site Barbearia em produção.
+# Site Barber Shop
 
 ## Linguaguens utilizadas
 - HTML
 - CSS
  
-### [Site barbearia](https://gaabrieloliver.github.io/barbearia-site/)
+### [Clique aqui para acessar](https://gaabrieloliver.github.io/barbearia-site/)
